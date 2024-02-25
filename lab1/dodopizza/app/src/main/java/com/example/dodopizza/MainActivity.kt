@@ -127,7 +127,7 @@ class MainActivity : AppCompatActivity() {
             val filteredList = ArrayList<Pizza>()
 
             for(i in newPizzaList){
-                if(i.name!!.lowercase(Locale.ROOT).contains(query)){
+                if(i.name!!.lowercase(Locale.ROOT).contains(query.lowercase())){
                     filteredList.add(i)
                 }
             }
