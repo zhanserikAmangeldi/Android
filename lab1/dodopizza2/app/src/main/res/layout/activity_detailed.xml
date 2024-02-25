@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedActivity">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/baseline_arrow_back_ios_24"
+        android:id="@+id/backButton"
+        android:layout_height="32dp"
+        android:layout_width="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"/>
+
+    <ImageView
+        android:id="@+id/Big_Picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bayern"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/bayernpizza"/>
+
+    <TextView
+        android:id="@+id/Pizza_name_Big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Баварская"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Big_Picture"
+        />
+
+    <TextView
+        android:id="@+id/pizza_description_Big"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="12dp"
+        android:text="Острые колбаски чоризо, маринованные огурчики, красный лук, томаты, горчичный соус, моцарелла, фирменный томатный соус"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Pizza_sub_desc"/>
+
+    <TextView
+        android:id="@+id/Pizza_sub_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="30, традиционное тесто 30, 550 г"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"
+        app:layout_constraintTop_toBottomOf="@id/Pizza_name_Big"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+
+        android:id="@+id/Pizza_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/orange_background"
+        android:gravity="center"
+        android:onClick="onBackPressed"
+        android:paddingVertical="12dp"
+        android:text="В корзину за 9 800 Т"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pizza_description_Big"
+        app:layout_constraintVertical_bias="0.922" />
+
+
+    <!--    <RadioGroup-->
+<!--        app:layout_constraintTop_toBottomOf="@id/pizza_description_Big"-->
+<!--        android:id="@+id/daily_weekly_button_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radio0"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:checked="true"-->
+<!--            android:text="Daily"-->
+
+<!--            android:background="@drawable/radio_bg"-->
+<!--            android:button="@android:color/transparent"-->
+<!--            android:textColor="@drawable/radio_text_color"/>-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radio1"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Weekly"-->
+
+
+<!--            android:background="@drawable/radio_bg"-->
+<!--            android:button="@android:color/transparent"-->
+<!--            android:textColor="@drawable/radio_text_color"-->
+<!--            />-->
+
+<!--    </RadioGroup>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
